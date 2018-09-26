@@ -17,7 +17,7 @@ title: 使用Visual Studio 2017编写c语言程序
 
 进入如下界面（我这个是已经安装好的所以有点不一样）
 ![](imgOfLab01/img03.png)
-<font colour="red"><b>*需要注意的是我们要安装的是community版，其他版本是要收费的</b></font>
+<font color="red" ><strong><i>*需要注意的是我们要安装的是community版，其他版本是要收费的</i></strong></font>
 
 点击安装进入如下界面
 ![](imgOfLab01/img04.png)
