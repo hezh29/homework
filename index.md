@@ -1,4 +1,3 @@
-<link href = "images/favicon.jpg" type = "image/jpg" rel = "icon">
 # 【17345021】的软导作业索引页
 
 ## 课后作业
