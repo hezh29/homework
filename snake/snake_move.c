@@ -47,8 +47,8 @@ int main() {
 		switch (direction) {
 		case 'A':snakeMove(snakeCoordinate, map, snakeLength, -1, 0); break;
 		case 'D':snakeMove(snakeCoordinate, map, snakeLength, 1, 0); break;
-		case 'W':snakeMove(snakeCoordinate, map, snakeLength, -1, 0); break;
-		case 'S':snakeMove(snakeCoordinate, map, snakeLength, 1, 0); break;
+		case 'W':snakeMove(snakeCoordinate, map, snakeLength, 0, -1); break;
+		case 'S':snakeMove(snakeCoordinate, map, snakeLength, 0, 1); break;
 		default: continue;
 		}
 
@@ -76,11 +76,12 @@ void snakeMove(int snakeCoordinate[][2], char map[12][12], int snakeLength, int 
 	snakeCoordinate[0][0] += dx;
 	snakeCoordinate[0][1] += dy;
 	clearMap(map);
-	map[snakeCoordinate[0][1]][snakeCoordinate[0][0]] = 'H';
-
+	
 	for (int i = 1; i < snakeLength; i++) {
 		map[snakeCoordinate[i][1]][snakeCoordinate[i][0]] = 'X';
 	}
+	
+	map[snakeCoordinate[0][1]][snakeCoordinate[0][0]] = 'H';
 }
 
 void clearMap(char map[][12]) {
