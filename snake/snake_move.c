@@ -78,16 +78,16 @@ void snakeMove(int snakeCoordinate[][2], char map[12][12], int snakeLength, int 
 	clearMap(map);
 	
 	for (int i = 1; i < snakeLength; i++) {
-		map[snakeCoordinate[i][1]][snakeCoordinate[i][0]] = 'X';
+		map[snakeCoordinate[i][1]][snakeCoordinate[i][0]] = SNAKE_BODY;
 	}
 	
-	map[snakeCoordinate[0][1]][snakeCoordinate[0][0]] = 'H';
+	map[snakeCoordinate[0][1]][snakeCoordinate[0][0]] = SNAKE_HEAD;
 }
 
 void clearMap(char map[][12]) {
 	for (int i = 1; i < 11; i++) {
 		for (int j = 1; j < 11; j++) {
-			map[i][j] = ' ';
+			map[i][j] = BLANK_CELL;
 		}
 	}
 }
