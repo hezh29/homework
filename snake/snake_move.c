@@ -1,5 +1,5 @@
 //snake_move.c
-//sbake
+//snake
 //
 //Created by Zehao HE on 18-12-5
 //Copyright(c)
